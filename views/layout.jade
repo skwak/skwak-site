@@ -1,6 +1,5 @@
 doctype html
 html
-
   head
     meta(charset='utf8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
@@ -8,13 +7,18 @@ html
     meta(name='author', content= "stephanie kwak")
     link(rel="icon" href="/img/favicon.ico" type="image/x-icon")
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    title= _path
+    title skwak
     != css()
 
   body
     div(class='header')
-      img(src='img/decor/old-school.png' class='old-computer')
-    img(src='img/decor/name_twitch2.gif')
+      a(href='index.html') 
+        img(src='img/decor/old-school.png' class='old-computer')
+    a(href='index.html')
+      img(src='img/decor/name_twitch2.gif')
+    nav
+      p
+        #[a(href='about.html') ABOUT] / #[a(href='visuals.html') VISUALS] / #[a(href='writing.html') WRITING]
       
     block content
 
