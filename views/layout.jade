@@ -7,12 +7,18 @@ html
     meta(name='description', content='world of skwak')
     meta(name='author', content= "stephanie kwak")
     link(rel="icon" href="/img/favicon.ico" type="image/x-icon")
-    //- uncomment if your site is responsive!
-    //- meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     title= _path
     != css()
 
   body
+    div(class='header')
+      img(src='img/decor/old-school.png' class='old-computer')
+    img(src='img/decor/name_twitch2.gif')
+      
     block content
 
     != js()
+    
+
+      
