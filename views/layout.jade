@@ -9,23 +9,18 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title skwak
     != css()
+    link(href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet")
 
   body
-    div(class='header')    
-    
-    a(href='index.html') 
-      img(src='img/decor/old-school.png' class='old-computer')
-    a(href='index.html')
-      img(src='img/decor/name_twitch2.gif' class='name-twitch')
-      
-    nav
-        #[a(href='index.html') INDEX] / #[a(href='about.html') ABOUT] / #[a(href='writing.html') WRITING] / #[a(href='visuals.html') VISUALS] 
-      
-    block content
-    
-    script(src='/js/analytics.js')
-    
-    != js()
-    
+    div(class='header')
 
-      
+    a(href='index.html')
+      img(src='./img/old-school.png' class='old-computer')
+    a(href='index.html')
+      img(src='./img/name_twitch2.gif' class='name-twitch')
+
+    block content
+
+    script(src='/js/analytics.js')
+
+    != js()
